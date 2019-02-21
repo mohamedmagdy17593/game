@@ -1,0 +1,18 @@
+type Query {
+  hello: String
+}
+
+type Mutation {
+  attack(gameId: String): String
+}
+
+type Subscription {
+  gameState: GameState
+}
+
+type GameState {
+  game1: Int
+  game2: Int
+  target: Int
+  winner: String
+}
